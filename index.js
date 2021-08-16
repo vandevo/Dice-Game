@@ -13,3 +13,16 @@ const player2Dice = document.getElementById('player2Dice')
 const rollBtn = document.getElementById('rollBtn')
 const resetBtn = document.getElementById('resetBtn')
 
+rollBtn.addEventListener('click', function(){
+    const randomNumber = Math.floor(Math.random() * 6);
+    console.log(randomNumber);
+
+    if (player1Turn) {
+        player1Dice.textContent = randomNumber
+    } else {
+        player2Dice.textContent = randomNumber
+    }
+    player1Turn = !player1Turn
+})
+
+
