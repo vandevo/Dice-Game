@@ -56,5 +56,17 @@ resetBtn.addEventListener('click', function(){
 })
 
 function reset(){
-    
+    message.textContent = "Player 1's Turn"
+    player1Scoreboard.textContent = 0
+    player2Scoreboard.textContent = 0
+    player1Dice.textContent = '-'
+    player2Dice.textContent = '-'
+    player1Score = 0
+    player2Score = 0
+    player1Turn = true
+    rollBtn.style.display = "block"
+    resetBtn.style.display = "none"
+    player2Dice.classList.remove("active")
+    player1Dice.classList.add("active")
+   
 }
