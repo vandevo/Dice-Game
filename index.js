@@ -20,7 +20,6 @@ function block(){
 
 rollBtn.addEventListener('click', function(){
     const randomNumber = Math.floor(Math.random() * 6);
-    console.log(randomNumber);
 
     if (player1Turn) {
        
@@ -52,3 +51,10 @@ rollBtn.addEventListener('click', function(){
 })
 
 
+resetBtn.addEventListener('click', function(){
+    reset()
+})
+
+function reset(){
+    
+}
