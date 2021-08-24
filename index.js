@@ -33,6 +33,17 @@ rollBtn.addEventListener('click', function(){
         player1Dice.classList.add("active")
         message.textContent = "Player 2 Roll Now!"
     }
+
+    if (player1Score >= 20){
+        message.textContent = "Player 1 has won!"
+        resetBtn.style.display = "block"
+        rollBtn.style.display = "none"}
+     else if (player2Score >= 20){
+         message.textContent = "Player 2 has won!"
+         resetBtn.style.display = "block"
+         rollBtn.style.display = "none"}
+    
+
     player1Turn = !player1Turn
 })
 
