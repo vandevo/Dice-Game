@@ -16,6 +16,8 @@ const resetBtn = document.getElementById('resetBtn')
 function block(){
     resetBtn.style.display = "block"
     rollBtn.style.display = "none"
+    doubleBtn.style.display = "none"
+    
 }
 
 rollBtn.addEventListener('click', function(){
@@ -65,7 +67,9 @@ function reset(){
     player2Score = 0
     player1Turn = true
     rollBtn.style.display = "block"
+    doubleBtn.style.display = "block"
     resetBtn.style.display = "none"
+    
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
    

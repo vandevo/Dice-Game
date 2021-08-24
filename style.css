@@ -58,16 +58,32 @@ button {
     cursor: pointer;
 }
 
+#doubleBtn, #rollBtn, #resetBtn {
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+}
+
+#doubleBtn {
+    background-color: transparent;
+    border: solid 2px var(--color-5);
+    border-radius: 25px;
+    color: black;
+    margin-top: 10px;
+    
+}
+
 #rollBtn {
     background-color: var(--color-5);
     border-radius: 25px;
-    margin: 0 auto;
+ 
+    
 }
 
 #resetBtn {
     background-color: var(--color-4);
     border-radius: 25px;
-    margin: 0 auto;
+    margin-top: 10px;
+   
 }
 
 button:focus {
